@@ -26,4 +26,6 @@ GET http://localhost:8080/location?lon=29.1234&lat=32.1234
 
 ## Response
 
-
+{
+"message": "location request forwarded"
+}
