@@ -1,0 +1,15 @@
+version: '2'
+services:
+  api-gateway:
+    image: api-gateway:1.0.0
+    container_name: api-gateway
+    ports:
+      - "8080:8080"
+    environment:
+      - GRPS_SERVER_ADDRESS=grpc-server:50051
+    networks:
+      - docker_default
+
+networks:
+  docker_default:
+    external: true
